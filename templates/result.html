@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Результат</h2>
+        <div class="result">
+            <p>{{ result }}</p>
+        </div>
+        <a href="{{ url_for('index') }}" class="new-operation">Нова операція</a>
+    </div>
+</body>
+</html>
